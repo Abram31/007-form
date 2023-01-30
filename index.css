@@ -1,0 +1,17 @@
+.wrapper-map {
+    height: 10rem;
+}
+
+.spinner-border {
+    display: none;
+}
+
+.container-cost-distance {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+
+    word-break: keep-all;
+    padding: 1rem 2rem;
+    background-color: #64cc6e;
+}
