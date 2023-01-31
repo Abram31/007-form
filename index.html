@@ -67,7 +67,7 @@
                 <div class="wrapper-cost" id="cost"></div>
                 <div id="map" class="wrapper-map"></div>
 
-                <!-- <form class="needs-validation" id="form-for-sent" novalidate>
+                <form class="needs-validation" id="form-for-sent" novalidate>
                     <div class="form-group">
                         <label class="form-label" for="date">Дата</label>
                         <div class="date-group__wrapper">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="phone-form">Время выезда</label>
+                        <label class="form-label" for="time-form">Время выезда</label>
                         <input type="time" class="form-control" id="time-form" required>
                         <div class="invalid-feedback">
                             Укажите время выезда!
@@ -95,21 +95,23 @@
                     <div class="form-group">
                         <label class="form-label" for="phone-form">Номер
                             телефона</label>
-                        <input type="number" minlength="5" class="form-control" id="phone-form" required>
+                        <input type="tel" minlength="5" class="form-control" id="phone-form" required>
                         <div class="invalid-feedback" id="check-phone">
                             Не менее 5 цифр!
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label class="form-label" for="comments">Комментарий</label>
                         <textarea class="form-control" id="comments" rows="2"></textarea>
                     </div>
                     <div class="wrapper-button-amount">
                         <div class="message-about-send" id="message-about-send"></div>
-                        <button type="submit" class="btn btn-primary btn-block" id="sent-order" disabled>Отправить
+                        <button type="submit" class="btn btn-primary btn-block" id="sent-order">Отправить
                             заявку на перевозку</button>
                     </div>
+                </form>
+                <!-- 
+
                 </form> -->
         </div>
     </section>
