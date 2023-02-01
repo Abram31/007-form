@@ -1,4 +1,4 @@
-import { costs } from "./price.js"
+// import { costs } from "./price.js"
 import { yandexMap } from "./yandexMap.js"
 
 export const formCalculate = () => {

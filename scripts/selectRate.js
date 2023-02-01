@@ -1,4 +1,4 @@
-import { costs } from "./price.js"
+// import { costs } from "./price.js"
 
 export const selectRate = () => {
     const selectRate = document.querySelector('#select-rate')

@@ -1,4 +1,4 @@
-import { costs } from "./price.js";
+// import { costs } from "./price.js";
 
 export const calculateCost = (distance, carClass) => {
     const price = costs.find((cost) => cost.type === `${carClass}`).price
