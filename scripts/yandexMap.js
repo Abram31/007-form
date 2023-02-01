@@ -69,15 +69,15 @@ export function yandexMap(start, finish) {
             // что маршрут не пустой.
             if (activeRoute) {
                 // Вывод информации об активном маршруте.
-                console.log("Длина: " + activeRoute.properties.get("distance").text);
-                console.log("Время прохождения: " + activeRoute.properties.get("duration").text);
+                // console.log("Длина: " + activeRoute.properties.get("distance").text);
+                // console.log("Время прохождения: " + activeRoute.properties.get("duration").text);
                 const carSelectElement = document.getElementById('select-rate')
                 const indexOptionElement = carSelectElement.options.selectedIndex
                 const element = carSelectElement[indexOptionElement]
                 const distance = activeRoute.properties.get("distance").text
                 const carClass = element.getAttribute('type')
                 const cost = calculateCost(distance, carClass)
-                console.log("Стоимость: " + cost);
+                // console.log("Стоимость: " + cost);
                 createCostElement(cost, activeRoute.properties.get("distance").text)
 
                 costBtnAmount.disabled = false;
@@ -92,7 +92,6 @@ export function yandexMap(start, finish) {
             costBtnAmount.disabled = false;
             btnSpinner.classList.remove('active-spinner')
 
-            console.log(event);
         });
     }, function (err) {
         console.log(err);

@@ -1,3 +1,4 @@
+import { costs } from "./price.js"
 import { yandexMap } from "./yandexMap.js"
 
 export const formCalculate = () => {
@@ -18,7 +19,7 @@ export const formCalculate = () => {
             const formData = {
                 depart: depart,
                 arrive: arrival,
-                carClass: carClass
+                carClass: costs.find(classAuto => classAuto.type === carClass).name
 
             }
             console.log(formData);

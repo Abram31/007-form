@@ -1,3 +1,5 @@
+import { sendMail } from "./sendMail.js"
+
 export const formSendOrder = () => {
     const form = document.getElementById('form-for-sent')
     const formCalculate = document.getElementById('form-for-calculation')
@@ -12,6 +14,8 @@ export const formSendOrder = () => {
 
             const fullData = { ...data, date: date, time: time, phone: phone, comments: comments }
             console.log(fullData);
+
+            sendMail(fullData)
 
 
         }
