@@ -1,3 +1,11 @@
+.container-form {
+    max-width: 600px ;
+}
+.wrapper-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .wrapper-map {
     height: 10rem;
 }
