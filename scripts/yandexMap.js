@@ -79,12 +79,18 @@ export function yandexMap(start, finish) {
                 const cost = calculateCost(distance, carClass)
                 console.log("Стоимость: " + cost);
                 createCostElement(cost, activeRoute.properties.get("distance").text)
+
+                costBtnAmount.disabled = false;
+                btnSpinner.classList.remove('active-spinner')
             }
 
         }).add("requestfail", function (event) {
             createCostElement()
             departInput.setCustomValidity(false)
             arrivalInput.setCustomValidity(false)
+
+            costBtnAmount.disabled = false;
+            btnSpinner.classList.remove('active-spinner')
 
             console.log(event);
         });

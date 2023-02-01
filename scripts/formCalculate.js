@@ -1,6 +1,7 @@
 import { yandexMap } from "./yandexMap.js"
 
 export const formCalculate = () => {
+    sessionStorage.removeItem('form-data')
     const form = document.getElementById('form-for-calculation')
     form.addEventListener("submit", (e) => {
         if (form.checkValidity()) {

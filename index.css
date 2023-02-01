@@ -6,6 +6,14 @@
     display: none;
 }
 
+.active-spinner {
+    display: block;
+}
+
+.wrapper-cost__err {
+    color: red;
+}
+
 .container-cost-distance {
     display: flex;
     flex-direction: column;
@@ -14,4 +22,10 @@
     word-break: keep-all;
     padding: 1rem 2rem;
     background-color: #64cc6e;
+}
+
+#btn-cost-amount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
