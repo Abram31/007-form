@@ -1,4 +1,4 @@
-import { callingModal } from "./callingModal.js"
+// import { callingModal } from "./callingModal.js"
 // import { costs } from "./price.js"
 import { yandexMap } from "./yandexMap.js"
 
