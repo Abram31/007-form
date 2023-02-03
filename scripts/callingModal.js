@@ -5,7 +5,9 @@ export const callingModal = (err) => {
         message.style.color = 'red'
         $('#departureWindow').modal()
     } else {
-        message.innerText = "Ваша заявка отправлена!"
+        const button = document.getElementById('sent-order')
+        button.innerText = 'Спасибо, заявка отправлена'
+        message.innerText = "Спасибо! Ваш заказ принят в обработку. \n В ближайшее время мы с вами свяжемся!"
         $('#departureWindow').modal()
     }
 }
