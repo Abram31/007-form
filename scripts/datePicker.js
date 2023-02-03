@@ -5,7 +5,7 @@ export const datePicker = () => $(function () {
         });
 });
 
-export const datePickerListener = (button) => $(function () {
+export const datePickerListener = (button) => require(['jquery'], function ($) {
     $('#datepicker').datepicker()
     .on("change", function (e) {
         button.disabled = false;
