@@ -17,6 +17,9 @@
 .input-group-text {
     padding: 0.7rem;                  
 }
+.modal-body {
+    height: fit-content;
+}
 
 .wrapper-form {
     display: flex;

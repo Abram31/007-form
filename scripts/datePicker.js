@@ -3,6 +3,7 @@ export const datePicker = () => $(function () {
         format: 'dd/mm/yyyy',
         autoclose: true,
     }).on("change", function (e) {
+        const button = document.getElementById('sent-order')
         button.disabled = false;
         button.innerText = 'Отправить заявку на перевозку'
     });;
