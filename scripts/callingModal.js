@@ -5,6 +5,7 @@ export const callingModal = (err) => {
         message.style.color = 'red'
         jQuery.noConflict();
         $('#departureWindow').appendTo("body").modal("show")
+        
 
     } else {
         const button = document.getElementById('sent-order')
