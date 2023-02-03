@@ -1,3 +1,4 @@
+import { callingModal } from "./callingModal.js"
 import { sendMail } from "./sendMail.js"
 
 export const formSendOrder = () => {
@@ -5,6 +6,9 @@ export const formSendOrder = () => {
     const formCalculate = document.getElementById('form-for-calculation')
     sessionStorage.getItem('form-data')
     form.addEventListener("submit", (e) => {
+        callingModal()
+
+
         if (form.checkValidity() && formCalculate.checkValidity() && sessionStorage.getItem('form-data')) {
             const data = JSON.parse(sessionStorage.getItem('form-data'))
             const date = form.querySelector('#date-form').value
