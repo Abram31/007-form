@@ -1,4 +1,4 @@
-import { datePickerListener } from "./datePicker.js";
+// import { datePickerListener } from "./datePicker.js";
 
 export const disableClickAfterSend = () => {
     const button = document.getElementById('sent-order')
@@ -29,5 +29,5 @@ export const disableClickAfterSend = () => {
         })
     })
 
-    datePickerListener(button)
+    // datePickerListener(button)
 }
