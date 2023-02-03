@@ -1,12 +1,12 @@
 .container-form {
     max-width: 400px ;
     margin: 0 auto;
-    font-size: 21px;
+    font-size: 18px;
 }
 #btn-cost-amount,
 #sent-order,
 .button-close {
-    font-size: 21px;
+    font-size: 18px;
 }
 .wrapper-form {
     display: flex;

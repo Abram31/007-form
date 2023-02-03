@@ -1,3 +1,5 @@
+import { datePickerListener } from "./datePicker";
+
 export const disableClickAfterSend = () => {
     const button = document.getElementById('sent-order')
     button.disabled = true;
@@ -27,9 +29,5 @@ export const disableClickAfterSend = () => {
         })
     })
 
-    $('#datepicker').datepicker()
-        .on("change", function (e) {
-            button.disabled = false;
-            button.innerText = 'Отправить заявку на перевозку'
-        });
+    datePickerListener(button)
 }
