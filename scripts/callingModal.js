@@ -4,7 +4,7 @@ export const callingModal = (err) => {
         message.innerText = "Заявка не отправлена, попробуйте еще раз!"
         message.style.color = 'red'
         jQuery.noConflict();
-        $('#departureWindow').modal()
+        $('#departureWindow').appendTo("body").modal("show")
 
     } else {
         const button = document.getElementById('sent-order')
@@ -12,6 +12,6 @@ export const callingModal = (err) => {
         message.innerText = "Спасибо! Ваш заказ принят в обработку. \n В ближайшее время мы с вами свяжемся!"
         console.log(document.getElementById('departureWindow'));
         jQuery.noConflict();
-        $('#departureWindow').modal()
+        $('#departureWindow').appendTo("body").modal("show")
     }
 }
