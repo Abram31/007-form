@@ -5,9 +5,16 @@
 }
 #btn-cost-amount,
 #sent-order,
-.button-close {
+.button-close,
+.modal-body,
+.form-control {
     font-size: 18px;
+    height: 37px;
 }
+#comments {
+    height: auto;
+}
+
 .wrapper-form {
     display: flex;
     flex-direction: column;
